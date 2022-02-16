@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Tembe/Documents/AndroidProjects/SmartPME/app/src/main/res/layout/activity_adicionar_cliente.xml" value="0.14" />
+        <entry key="..\:/Users/Tembe/Documents/AndroidProjects/SmartPME/app/src/main/res/layout/activity_adiconar_encomenda.xml" value="0.2" />
+        <entry key="..\:/Users/Tembe/Documents/AndroidProjects/SmartPME/app/src/main/res/layout/activity_encomendas.xml" value="0.14" />
+        <entry key="..\:/Users/Tembe/Documents/AndroidProjects/SmartPME/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Tembe/Documents/AndroidProjects/SmartPME/app/src/main/res/layout/activity_produto.xml" value="0.18885869565217392" />
+        <entry key="..\:/Users/Tembe/Documents/AndroidProjects/SmartPME/app/src/main/res/layout/dialog_add_encomenda.xml" value="0.22" />
+        <entry key="..\:/Users/Tembe/Documents/AndroidProjects/SmartPME/app/src/main/res/layout/model_encomenda_click.xml" value="0.2" />
+        <entry key="..\:/Users/Tembe/Documents/AndroidProjects/SmartPME/app/src/main/res/layout/model_encomenda_item_list.xml" value="0.25" />
+        <entry key="..\:/Users/Tembe/Documents/AndroidProjects/SmartPME/app/src/main/res/layout/model_list_encomenda.xml" value="0.22" />
+        <entry key="..\:/Users/Tembe/Documents/AndroidProjects/SmartPME/app/src/main/res/layout/model_list_produto.xml" value="0.18" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

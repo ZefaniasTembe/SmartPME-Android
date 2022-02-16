@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    tools:context=".MainActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout2"
+            style="@style/Widget.AppCompat.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#124512"
+                app:titleTextColor="@color/white"
+                style="@style/Widget.AppCompat.Toolbar"
+                app:title="@string/app_name"
+                app:popupTheme="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small">
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/ic_principal"
+                    />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:columnCount="2"
+            android:rowCount="3"
+            >
+<!--            Primeiro 0x0-->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnEncomendasMain"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="5dp"
+                android:layout_gravity="fill"
+                >
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="8dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_encomenda"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Encomendas"
+                        android:textAllCaps="true"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="8dp"
+                        android:textStyle="bold"
+                        />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+            <!-- segundo 0x1-->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnProdutosMain"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="5dp"
+                android:layout_gravity="fill"
+                >
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="8dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_produto"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Produtos"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textSize="16sp"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="16dp"
+                        android:paddingEnd="8dp"
+                        android:textStyle="bold"
+                        />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+            <!-- terceiro 1x0-->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnFinancasMain"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="5dp"
+                android:layout_gravity="fill"
+                >
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="8dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_financa"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Finanças"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textSize="16sp"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="16dp"
+                        android:paddingEnd="8dp"
+                        android:textStyle="bold"
+                        />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+            <!-- quarto 1x1 -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnFornecedoresMain"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="5dp"
+                android:layout_gravity="fill"
+                >
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="8dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_cliente"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fornecedores"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textSize="16sp"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="16dp"
+                        android:paddingEnd="8dp"
+                        android:textStyle="bold"
+                        />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+            <!-- Quinto 2x0 -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnClientesMain"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="5dp"
+                android:layout_gravity="fill"
+                >
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="8dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_clientes"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Clientes"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="16dp"
+                        android:paddingEnd="8dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+            <!-- sexto 2x1 -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnAgendaMain"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="5dp"
+                android:layout_gravity="fill"
+                >
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="8dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_agenda"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Agenda"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="16dp"
+                        android:paddingEnd="8dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
